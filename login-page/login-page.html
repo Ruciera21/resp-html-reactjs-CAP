@@ -9,22 +9,78 @@
       property="og:description"
       content="CAP - Online Artworks shop and showcase is a miniscule project created for practice purposes in mission to boost my programming skills"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>CAP - Online Artworks shop and showcase</title>
     <meta
       name="description"
       content="CAP - Online Artworks shop and showcase is a miniscule project created for practice purposes in mission to boost my programming skills"
     />
-
-    <link rel="stylesheet" href="landing-page.css" />
+    <script src="https://kit.fontawesome.com/76d4c5b112.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login-page.css" />
+   
   </head>
-  <body class="landing-page-log-in">
-    <div id="wrapper">
-      <div id="background-slideshow">
-        <div class="wallpaper"></div>
+  <!-- Body -->
+  <body class="login-landing-page">
+    <div id="body-wrapper">
+      <!-- Background container -->
+      <div class="img-container">
+        <div class="backgr">
+          <div class="bg-img"></div> 
+        </div>
+      </div>
+
+      <!-- Login container  -->
+      <div class="container">
+        <div class="content">
+          <img
+            src="/img/login-form/cap-logo.svg"
+            type="catchphrase"
+            style="display: block; height: 64px; margin: 64px auto 0px"
+          />
+          <header>CREATE - APPRECIATE - PERPETUATE</header>
+          <form action="#">
+            <div class="field">
+              <span class="fa fa-user"></span>
+              <input type="text" required placeholder="Enter Email" />
+            </div>
+            <div class="field space">
+              <span class="fa fa-lock"></span>
+              <input
+                type="password"
+                class="pass-key"
+                required
+                placeholder="Password"
+              />
+              <span class="show">SHOW</span>
+            </div>
+            <div class="field-buttons">
+              <button class="field manual login" type="submit" height="40">
+                Login
+              </button>
+              <button class="field manual register" type="submit" height="40">
+                Register
+              </button>
+            </div>
+          </form>
+          <div class="forget-pass">
+            <a href="#"> Forgot password? </a>
+          </div>
+          <!-- <div class="other-login-wrapper">
+            <buttom class="field other-btn gmail">
+              Continue with Google
+            </buttom>
+            <buttom class="field other-btn twitter">
+              Continue with Twitter
+            </buttom>
+            <buttom class="field other-btn facebook">
+              Continue with Facebook
+            </buttom> -->
+          </div>
+        </div>
       </div>
     </div>
-    <div id="search-bar"></div>
   </body>
 </html>
+
+<script src="login-page.js"></script>

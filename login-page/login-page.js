@@ -28,3 +28,18 @@ showBtn.addEventListener("click", function () {
 // }
 
 // setInterval(changeBG, 5000);
+function setValue() {
+  let getEmail = document.querySelector(".field email").value;
+  let getPass = document.querySelector(".field space").value;
+
+  if (getEmail == "") {
+    alert("Email Required");
+  } else if (!getEmail.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
+    alert("Email invalid");
+    return false;
+  } else if (getPass == "") {
+    alert("Email Required");
+  }
+
+  document.getElementById("myForm").reset();
+}

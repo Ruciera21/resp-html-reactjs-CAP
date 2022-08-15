@@ -39,10 +39,10 @@
             style="display: block; height: 64px; margin: 64px auto 0px"
           />
           <header>CREATE - APPRECIATE - PERPETUATE</header>
-          <form action="#">
-            <div class="field">
+          <form action="#" id="myForm" onsubmit="setValue(); return false">
+            <div class="field email">
               <span class="fa fa-user"></span>
-              <input type="text" required placeholder="Enter Email" />
+              <input type="text" required placeholder="Enter Email" value="" />
             </div>
             <div class="field space">
               <span class="fa fa-lock"></span>
@@ -80,7 +80,12 @@
         </div>
       </div>
     </div>
+    <footer id = "footer"> 
+      <div class = "_footer-container">
+        <div class="_footer-content">&copy;CAP - 2022. All Rights Reserved</div>
+      </div>
+    </footer>
   </body>
-</html>
-
-<script src="login-page.js"></script>
+  </html>
+  
+  <script src="login-page.js"></script>

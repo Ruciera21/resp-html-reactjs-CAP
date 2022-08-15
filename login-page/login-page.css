@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+
 .html{
     line-height: 1.15;
 }
@@ -15,7 +18,7 @@
 /* Perlu buat media quaries -- harus responsive */
 
 
-.login-landing-page{
+body {
     /* box-sizing:content-box; */
     position: fixed;
     inset:0px;
@@ -28,15 +31,12 @@
     display: flex;
 }
 
-
-.image-container{
-    position: relative;
-    /* height: 100%;   */
-}
-.backgr{
+ .img-container{
     position: absolute;
-    inset: 0px;
+    inset: 0px; 
+    /* height: 100%;    */
 }
+
 .bg-img{
     background: url("/img/2.jpg");
     position: relative;
@@ -103,6 +103,8 @@
     width: 100%;
     display: flex;
     background: rgba(255,255,255,0.94);
+    border: 1px auto rgba(255,255,255,0.94);
+    border-radius: 100px;
 }
 
 .field span{
@@ -129,13 +131,23 @@
 
 .show{
     position:absolute;
+    /* display: flex; */
     right:13px;
-    font-size:13px;
+    /* top: 7px; */
+    /* bottom: 7px; */
+    text-align: center;
+    font-size:11px;
     font-weight: 700;
-    color:#222;
+    color:white;
     display:none;
     cursor:pointer;
     font-family: "montserrat", sans-serif;
+
+    /* padding: 0 0 0 0; */
+    /* margin: 5px 0px 5px 0px; */
+    /* background-color: rgb(56, 73, 228);
+    border: 1px solid rgb(56, 73, 228);
+    border-radius: 10px; */
 }
 
 .pass-key:valid ~ .show{
@@ -182,35 +194,65 @@
     position:static;
     margin: 10px 1em 0 0;
     color:#090909;
-    padding: 0.5em 0em 0em 2.4em;
+    padding: 0.5em 0em 0em 2.7em;
     font-size: 18px;
-    border-radius: 0.5em;
+    border-radius: 5em;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     transition: all .3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px 6px 12px #fff;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px 6px 12px #fff; */
 }
 
-.login:hover{
-    box-shadow: -6px 6px 12px #c5c5c5, 6px 6px 12px #fff
-}
+ .login:hover{ 
+    background: #838383;
+    border: 1px solid #838383;
+    /* box-shadow: -6px 6px 24px #c5c5c5, 6px 6px 12px #fff */
+} 
 
 .register{
     margin: 10px 0 0 0;
-    color:#090909;
-    padding: 0.5em 0em 0em 2.0em;
+    color:#ffffff;
+    padding: 0.5em 0em 0em 2.1em;
     font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #e8e8e8;
+    border-radius: 5em;
+    background: #0a2ab9;
+    border: 1px solid #0a2ab9;
     transition: all .3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px 6px 12px #fff;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px 6px 12px #fff; */
 }
 
-.register:hover{
-    box-shadow: -6px 6px 12px #c5c5c5, 6px 6px 12px #fff
+ .register:hover{
+    background: #011777;
+    border: 1px solid #011777;
+    /* box-shadow: -6px 6px 12px #c5c5c5, 6px 6px 12px #fff  */
+ }
+
+._footer-container {
+    height: 30px;
+    background-color: #464a4d;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: hsla(0,0%,100%,.5);
+    z-index: 997;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
+._footer-content {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0.3em;
+    text-align:center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;    
+}
 
 
 /* .other-login-wrapper {
